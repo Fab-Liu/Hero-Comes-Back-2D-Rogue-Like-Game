@@ -67,7 +67,7 @@ namespace Michsky.UI.Freebie
 
                 Debug.Log("Character Selected"+buttonIndex);
                 Globe.characterIndex = buttonIndex;
-                Application.LoadLevel("Level1");
+                Application.LoadLevel("Story");
 
 
             }
