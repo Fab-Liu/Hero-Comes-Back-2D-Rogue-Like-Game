@@ -67353,6 +67353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warlock
       objectReference: {fileID: 0}
+    - target: {fileID: 6064090922059154899, guid: 5e702a7acc8184621a99717a7d2a031b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6064090922059154900, guid: 5e702a7acc8184621a99717a7d2a031b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -67417,6 +67421,10 @@ PrefabInstance:
       propertyPath: bossTips
       value: 
       objectReference: {fileID: 657109194}
+    - target: {fileID: 6064090922532166763, guid: 5e702a7acc8184621a99717a7d2a031b, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e702a7acc8184621a99717a7d2a031b, type: 3}
 --- !u!1 &1748619055
