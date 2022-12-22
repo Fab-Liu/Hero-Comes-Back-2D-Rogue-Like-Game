@@ -196,7 +196,7 @@ public class warlock : MonoBehaviour
         if(!isSkill && keyTimer != 0){
             if(!isHurt){
                 healthBar.damage(1);
-                Debug.Log("hp" + healthBar.currentHealth);
+                Debug.Log("hammer is working");
             }
             getHurt();
         }
