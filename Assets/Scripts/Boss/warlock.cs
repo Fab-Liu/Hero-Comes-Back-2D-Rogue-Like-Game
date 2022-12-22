@@ -23,6 +23,9 @@ public class warlock : MonoBehaviour
     private bool isDie = false;
     private bool isHurt = false;
     private bool isMove = false;
+    private bool isPlay = false;
+
+    private float playTimer = 0;
 
     private float Xleft, Xright;
     private float IsFaceRight = 0;
@@ -225,8 +228,16 @@ public class warlock : MonoBehaviour
             tipsTimer = Time.time;
         }
         animator.SetBool("IsHurt", true);
-        music.clip = hurt;
-        music.Play();
+        if(!isPlay){
+            music.clip = hurt;
+            music.Play();
+            isPlay = true;
+            playTimer = Time.time
+        }
+
+        if(isPlay && Time.time - playTimer > 0.5){
+            isPlay = false;
+        }
         Instantiate(blood, this.transform.position, this.transform.rotation);
         timer = Time.time;
     }
