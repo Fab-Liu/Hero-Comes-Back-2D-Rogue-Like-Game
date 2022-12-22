@@ -70,6 +70,7 @@ public class warlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("hp" + healthBar.currentHealth);
         if(isAngry){
             if(isSkill){
                 if(isSkill && Time.time - timer > 0.3){
@@ -232,7 +233,7 @@ public class warlock : MonoBehaviour
             music.clip = hurt;
             music.Play();
             isPlay = true;
-            playTimer = Time.time
+            playTimer = Time.time;
         }
 
         if(isPlay && Time.time - playTimer > 0.5){
