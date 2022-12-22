@@ -70,7 +70,6 @@ public class warlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("hp" + healthBar.currentHealth);
         if(isAngry){
             if(isSkill){
                 if(isSkill && Time.time - timer > 0.3){
@@ -195,7 +194,10 @@ public class warlock : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         if(!isSkill && keyTimer != 0){
-            if(!isHurt) healthBar.damage(1);
+            if(!isHurt){
+                healthBar.damage(1);
+                Debug.Log("hp" + healthBar.currentHealth);
+            }
             getHurt();
         }
     }
